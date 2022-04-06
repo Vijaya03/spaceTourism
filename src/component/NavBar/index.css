@@ -1,0 +1,132 @@
+nav{
+    position: relative;
+    padding-left:3.125rem;
+    font-family: var(--barlow);
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    height:6rem;
+    align-items: center;
+    padding-top:2.5rem; 
+}
+logo{
+    /* align-self: flex-start; */
+}
+.dash{
+    background:var(--cream);
+    width:min(23.813rem,60%);
+    height:.5px;
+    margin:0;
+    position: absolute;
+    left:-340px;
+    Opacity :25.15%;
+}
+ul{
+    position: relative;
+    margin-left:auto;
+    list-style-type:none;
+    display:flex;
+    width:51.875rem;
+    gap:3.125em;
+    color:var(--cream);
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(61.5485px);
+    height: 6rem;
+    align-items:center;
+}
+li a{
+    color:var(--cream);
+    font-size:1rem;
+    letter-spacing:.1em; 
+    display: flex;
+    gap:.5em;
+    height: 6rem;
+    align-items: center;
+    color:var(--cream);
+    justify-content: center;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+}
+li a:hover{
+    border-bottom: 1px solid var(--cream);
+}
+.active{
+    border-bottom: 2px solid var(--cream);
+}
+.count{
+    font-weight:bold;
+}
+/* section{
+    position: absolute;
+    top:50%;
+} */
+.hamburger{
+    display: none;
+}
+.cross{
+    display: none;
+}
+@media (max-width: 500px){
+    ul{
+        display: flex;
+        position: fixed;
+        width:70%;
+        height:100vh;
+        z-index:1000;
+        flex-direction:column;
+        gap:18px;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin-top: 0;
+        align-items:flex-start; 
+        justify-content: flex-start;
+        padding-left:1.875rem;
+        transform:translateX(100%); 
+        transition: transform 350ms ease-out;
+    }
+    ul[data-visible="true"]{
+        transform:translateX(0%);
+    }
+    ul:not(.cross){
+        padding-top:50px;
+    }
+    ul > .cross{
+        align-self:flex-end ;
+        padding:1.313rem 1.313rem 1.313rem 0;
+    }
+    li{
+        height:2.125rem;
+    }
+    .hamburger{
+        display: block;
+        margin-left:auto;
+        padding-right:1.25rem;
+        cursor:pointer;
+    }
+    .dash{
+        display: none;
+    }
+    .cross{
+        display: block;
+        cursor:pointer;
+    }
+}
+@media only screen and (max-width: 759px) and (min-width:499px){
+    .dash{
+        display: none;
+    }
+    ul{
+        width:28.125rem;
+        gap:2.5rem;
+    }
+    li{
+        font-size:0.875rem;
+    }
+    .count{
+        display:none;
+    }
+}

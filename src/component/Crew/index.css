@@ -1,0 +1,226 @@
+.main-crew{
+    background:url(../../assets/crew/background-crew-desktop.jpg) no-repeat center center fixed;
+    overflow: hidden;
+    min-height:100vh; 
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.crew-container{
+    display:flex;
+    width:100%;
+}
+.crew-des{
+    margin-top:5rem; 
+    width:100%;
+    padding-left:165px;
+}
+.crew-pic{
+    width:100%;
+    margin-top:auto;
+}
+.crew-des-header{
+    display: flex;
+    font-size:1.75rem;
+    color:var(--cream);
+    gap:22px;
+    font-family: var(--barlow);
+    text-transform: uppercase;
+    letter-spacing: 4.725px;
+}
+.designation{
+    padding-top:9.625rem; 
+    font-family:var(--bellefair);
+    font-size:2rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity:0.5;
+}
+.num{
+    color:#979797;
+    font-weight: bold;
+}
+.crew-name{
+    font-size:3.5rem;
+    font-family:var(--bellefair);
+    
+    text-transform: uppercase;
+    color: var(--cream);
+}
+.crew-achieve{
+    font-family:var(--barlow-regular);
+    font-size:1.125rem;
+    color:#D0D6F9;
+    font-weight:400;
+    margin-top:1.688rem;
+    width: 444px;
+}
+.pagination{
+ display: flex; 
+ margin-top:7.5rem;
+ gap:24px;
+}
+.pagination > button{
+    width:15px;
+    height:15px;
+    background:var(--cream);
+    opacity: 0.17;
+    border-radius:50%;
+    cursor: pointer;
+    margin-bottom: 5.875rem;
+    border:transparent;
+}
+.pagination > button.glow{
+    opacity: 1;
+}
+.pagination > button:hover{
+    opacity: 1;
+}
+.border-line{
+    display: none;
+}
+@media only screen and (max-width: 759px) and (min-width:379px){
+    .main-crew{
+        background:url(../../assets/crew/background-crew-tablet.jpg);
+        background-repeat:no-repeat;
+        overflow: hidden;
+    }
+    .crew-container{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+
+    }
+    .crew-des{
+        padding:0;
+        text-align: center;
+    }
+    .crew-des-header{
+        font-size:1.25rem;
+        padding-left: 2.25rem;
+        padding-bottom: 3.75rem;
+    }
+    .designation{
+        padding-top:0;
+    }
+    .crew-achieve{
+        width:100%;
+        padding-left:15%;
+        padding-right:16%;
+        font-size:1rem;
+        padding-bottom: 0;
+    }
+    .crew-name{
+        font-size:2.5rem;
+    }
+    .designation{
+        font-size:1.5rem;
+    }
+    .pagination{
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+        margin-top:0;
+        padding-top:35px;
+    }
+    .crew-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .crew-pic > img{
+        max-height: 22.25rem;
+    }
+}
+@media (max-width: 380px){
+    .main-crew{
+        background:url(../../assets/crew/background-crew-mobile.jpg);
+        background-repeat:no-repeat;
+        overflow: hidden;
+    }
+    .crew-container{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .crew-des{
+        padding:0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top:0;
+    }
+    .crew-des-header{
+        font-size:1rem;
+        justify-content: center;
+        position: absolute;
+        top:100px;
+        left:30%;
+        letter-spacing: 2.7px;
+    }
+    .designation{
+        padding-top:0;
+    }
+    .crew-achieve{
+        width:100%;
+        padding-left: 7%;
+        padding-right: 9%;
+        font-size:0.938rem;
+        padding-bottom: 0;
+        order: 4;
+        -webkit-order: 4;
+        line-height: 25px;
+    }
+    .crew-name{
+        font-size:1.5rem;
+        order:3;
+        -webkit-order: 3;
+    }
+    .designation{
+        font-size:1rem;
+        order: 2;
+        -webkit-order: 2;
+    }
+    .pagination{
+        justify-content: center;
+        align-items: center;
+        padding-top:0;
+        padding-bottom: 0;
+        margin-top:0;
+        order: 1;
+        -webkit-order: 1;
+    }
+    
+    .crew-pic{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 60px;
+       flex-direction: column;
+    }
+    .crew-pic > img{
+        max-height: 13.938rem;
+    }
+    .border-line{
+        display: flex;
+        background:#979797;
+        height:.1px;
+        margin:0;
+        border: transparent;
+        Opacity :25.15%;
+        width: calc(100% - 24px);
+    }
+    .pagination > button{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+}

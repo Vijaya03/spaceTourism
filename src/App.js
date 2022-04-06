@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home from './component/Home';
+import Destination from './component/Destination';
+import Crew from './component/Crew';
+import {BrowserRouter,Router,Route, Routes} from 'react-router-dom';
+import { useState, createContext } from "react";
+export const UserContext = createContext();
 function App() {
+  const [selected,setSelected] = useState("Home");
+  const user ={selected,setSelected};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={user}>
+    <>
+     <Routes>
+       <Route path="/" element={<Home/>}>  </Route>
+       <Route path="/destination" element={<Destination/>}>  </Route>
+       <Route path="/crew" element={<Crew/>}>  </Route>
+     </Routes>
+    </>
+    </UserContext.Provider>
   );
 }
 
 export default App;
+
