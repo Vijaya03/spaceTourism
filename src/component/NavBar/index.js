@@ -39,7 +39,7 @@ const NavBar = () =>{
                 </span>
                     <li  className={isActive('Home')} 
                         onClick={()=>{user.setSelected("Home") ;setToggle("false")}}>
-                        <Link to="/">
+                        <Link to="/space-tourism">
                             <span className="count">00</span>
                             <span className="nav-content">HOME</span>
                         </Link>
