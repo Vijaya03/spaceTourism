@@ -1,7 +1,7 @@
 {
   "name": "space-tourism",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://vijaya03.github.io/space-tourism/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
