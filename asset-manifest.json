@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/spaceTourism/static/css/main.442220c2.css",
-    "main.js": "/spaceTourism/static/js/main.5f3ef8f9.js",
+    "main.js": "/spaceTourism/static/js/main.254c88d4.js",
     "static/media/image-victor-glover.png": "/spaceTourism/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/spaceTourism/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
     "static/media/image-mark-shuttleworth.png": "/spaceTourism/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
@@ -40,15 +40,15 @@
     "static/media/README-template.md": "/spaceTourism/static/media/README-template.b392b2ad48e96384a30a.md",
     "static/media/logo.svg": "/spaceTourism/static/media/logo.565f7f2c0534403f11b7.svg",
     "index.html": "/spaceTourism/index.html",
-    "static/media/cross.svg": "/spaceTourism/static/media/cross.d9fb08ea9ff121788fd0.svg",
+    "static/media/cross.svg": "/spaceTourism/static/media/cross.61e950582a902dd68159.svg",
     "static/media/hamburger-icon.svg": "/spaceTourism/static/media/hamburger-icon.79819eb025086e613964.svg",
     "static/media/icon-close.svg": "/spaceTourism/static/media/icon-close.d47fda63cbd8b3fedbbc.svg",
     "static/media/icon-hamburger.svg": "/spaceTourism/static/media/icon-hamburger.5273efa7c50e96ef3e51.svg",
     "main.442220c2.css.map": "/spaceTourism/static/css/main.442220c2.css.map",
-    "main.5f3ef8f9.js.map": "/spaceTourism/static/js/main.5f3ef8f9.js.map"
+    "main.254c88d4.js.map": "/spaceTourism/static/js/main.254c88d4.js.map"
   },
   "entrypoints": [
     "static/css/main.442220c2.css",
-    "static/js/main.5f3ef8f9.js"
+    "static/js/main.254c88d4.js"
   ]
 }
