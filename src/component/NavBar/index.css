@@ -9,9 +9,6 @@ nav{
     align-items: center;
     padding-top:2.5rem; 
 }
-logo{
-    /* align-self: flex-start; */
-}
 .dash{
     background:var(--cream);
     width:min(23.813rem,60%);
