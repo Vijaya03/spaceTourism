@@ -22,8 +22,8 @@ const NavBar = () =>{
                     <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Group1">
                         <rect id="Rectangle" width="24" height="3" fill="#D0D6F9"/>
-                        <rect id="RectangleCopy" y="9" width="24" height="3" fill="#D0D6F9"/>
-                        <rect id="RectangleCopy 2" y="18" width="24" height="3" fill="#D0D6F9"/>
+                        <rect id="RectangleCopy1" y="9" width="24" height="3" fill="#D0D6F9"/>
+                        <rect id="RectangleCopy2" y="18" width="24" height="3" fill="#D0D6F9"/>
                         </g>
                     </svg>
                 </span>
@@ -32,8 +32,8 @@ const NavBar = () =>{
                 <span className="cross" onClick={()=>setToggle("false")}>
                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Group3">
-                        <rect id="RectangleCopy" x="2.5752" y="0.954102" width="24" height="3" transform="rotate(45 2.5752 0.954102)" fill="#D0D6F9"/>
-                        <rect id="RectangleCopy 3" x="0.454102" y="17.9246" width="24" height="3" transform="rotate(-45 0.454102 17.9246)" fill="#D0D6F9"/>
+                        <rect id="RectangleCopy2" x="2.5752" y="0.954102" width="24" height="3" transform="rotate(45 2.5752 0.954102)" fill="#D0D6F9"/>
+                        <rect id="RectangleCopy3" x="0.454102" y="17.9246" width="24" height="3" transform="rotate(-45 0.454102 17.9246)" fill="#D0D6F9"/>
                         </g>
                     </svg>
                 </span>
