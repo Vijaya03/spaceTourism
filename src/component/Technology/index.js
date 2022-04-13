@@ -25,13 +25,27 @@ const Technology = () =>{
         min-width:515px;
         height:527px;
         margin-top:60px;
-        @media only screen and (max-width: 759px) and (min-width:379px){
-            background:url(${image_test.landscape});
+        @media only screen and (max-width: 759px) and (min-width:499px){
+            background:url(${image_test.landscape}) no-repeat center center;
             max-height:19.375rem;
             min-width:100%;
         }
+        @media (max-width: 500px){
+            background:url(${image_test.landscape}) no-repeat center center;
+          
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            max-height:10.625rem;
+            min-width:100%;
+            margin-top:0; 
+        }
         @media (max-width: 380px){
-            background:url(${image_test.landscape});
+            background:url(${image_test.landscape}) no-repeat center center;
+            -webkit-background-size: 100%;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
             max-height:10.625rem;
             min-width:100%;
             margin-top:0;

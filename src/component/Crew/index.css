@@ -81,7 +81,7 @@
 .border-line{
     display: none;
 }
-@media only screen and (max-width: 759px) and (min-width:379px){
+@media only screen and (max-width: 759px) and (min-width:499px){
     .main-crew{
         background:url(../../assets/crew/background-crew-tablet.jpg);
         background-repeat:no-repeat;
@@ -137,6 +137,91 @@
     }
     .crew-pic > img{
         max-height: 22.25rem;
+    }
+}
+@media (max-width: 500px){
+    .main-crew{
+        background:url(../../assets/crew/background-crew-tablet.jpg);
+        background-repeat:no-repeat;
+        overflow: hidden;
+    }
+    .crew-container{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .crew-des{
+        padding:0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top:0;
+    }
+    .crew-des-header{
+        font-size:1rem;
+        justify-content: center;
+        position: absolute;
+        top:100px;
+        left:30%;
+        letter-spacing: 2.7px;
+    }
+    .designation{
+        padding-top:0;
+    }
+    .crew-achieve{
+        width:100%;
+        padding-left: 7%;
+        padding-right: 9%;
+        font-size:0.938rem;
+        padding-bottom: 0;
+        order: 4;
+        -webkit-order: 4;
+        line-height: 25px;
+    }
+    .crew-name{
+        font-size:1.5rem;
+        order:3;
+        -webkit-order: 3;
+    }
+    .designation{
+        font-size:1rem;
+        order: 2;
+        -webkit-order: 2;
+    }
+    .pagination{
+        justify-content: center;
+        align-items: center;
+        padding-top:0;
+        padding-bottom: 0;
+        margin-top:0;
+        order: 1;
+        -webkit-order: 1;
+    }
+    
+    .crew-pic{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 60px;
+       flex-direction: column;
+    }
+    .crew-pic > img{
+        max-height: 13.938rem;
+    }
+    .border-line{
+        display: flex;
+        background:#979797;
+        height:.1px;
+        margin:0;
+        border: transparent;
+        Opacity :25.15%;
+        width: calc(100% - 24px);
+    }
+    .pagination > button{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 }
 @media (max-width: 380px){

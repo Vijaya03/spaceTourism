@@ -102,7 +102,7 @@
     justify-content: flex-end;
     width:100%;
 }
-@media only screen and (max-width: 759px) and (min-width:379px){
+@media only screen and (max-width: 759px) and (min-width:499px){
     .main-technology{
         background:url(../../assets/technology/background-technology-tablet.jpg);
         background-repeat:no-repeat;
@@ -124,7 +124,6 @@
     .Luanch_header{
         font-size:1.25rem;
         top:9.688rem;
-        bottom:0;
         left:1.875rem;
         right:0;
         position: absolute;
@@ -161,12 +160,77 @@
         margin-bottom: 0;
     }
 }
-
+@media (max-width: 500px){
+    .main-technology{
+        background:url(../../assets/technology/background-technology-tablet.jpg);
+        background-repeat:no-repeat;
+        overflow: hidden;
+    }
+    .Launch_history{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap:2.125rem;
+    }
+    .Luanch_context{
+        grid-template-rows:40px 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        grid-template-areas: "a a"
+                             "b b";
+        margin-top:0px;
+        margin-bottom: 2rem;
+    }
+    .Luanch_header{
+        font-size:1rem;
+        top:6.5rem;
+        left:calc(75% - 163.44px);;
+        right:0;
+        position: absolute;
+        letter-spacing: 2.7px;
+    }
+    .circle_pagination{
+        flex-direction: row;
+    }
+    .circle_pagination > button{
+        width:40px;
+        height: 40px;
+        cursor:pointer;
+        font-size:1rem;
+    }
+    .Launch{
+        padding-left:0;
+    }
+    .Launch_description{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        margin-top:1.625rem;
+    }
+    .termo{
+        font-size:0.875rem;
+        margin-bottom:5px;
+    }
+    .Launch_description_context{
+       width: 100%;
+       justify-content: center;
+       font-size: 0.938rem;
+       padding: 0 24px 0 24px;
+       margin-bottom: 0;
+       line-height: 25px;
+       font-weight: 400;
+    }
+    .Launch_description_header {
+        font-size:1.5rem;
+        margin-bottom: 0;
+    }
+}
 @media (max-width: 380px){
     .main-technology{
         background:url(../../assets/technology/background-technology-mobile.jpg);
         background-repeat:no-repeat;
         overflow: hidden;
+        min-height:100vh; 
     }
     .Launch_history{
         flex-direction: column-reverse;

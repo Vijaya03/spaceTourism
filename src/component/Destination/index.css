@@ -129,7 +129,7 @@ hr.line{
     font-weight: 100;
 }
 
-@media only screen and (max-width: 759px) and (min-width:379px){
+@media only screen and (max-width: 759px) and (min-width:499px){
     .destination-content{
         background:url("../../assets/destination/background-destination-tablet.jpg") no-repeat center center fixed;
     }
@@ -168,6 +168,69 @@ hr.line{
     }
     .distance{
         text-align: center;
+    }
+}
+@media (max-width: 500px){
+    .destination-content{
+        background:url("../../assets/destination/background-destination-tablet.jpg") no-repeat center center fixed;
+    }
+    .planets-header{
+        padding:0;
+        font-size:1rem;
+        
+    }
+    .pic-area img{
+        width:170px;
+        height:170px;
+    }
+    .destination-area{
+        flex-direction:column;
+    }
+    .planets{
+        justify-content: center;
+        margin-bottom:0;
+        width:100%;
+        gap:2rem;
+    }
+    .pic-area{
+        align-self: center;
+    }
+    .planet-description{
+        justify-content: center;
+        align-items: center;
+        margin-top:3.313rem;
+        margin-bottom:0;
+    }
+    .changing-planets{
+        gap:20px;
+    }
+    .planet-description-line1{
+        font-size:3.5rem;
+    }
+    .planet-description-line2{
+        padding:0;
+        text-align: center;
+        padding: 27px 15px 30px 15px;
+    }
+    hr.line{
+        width: calc(100% - 30px);
+        margin-right: 0;
+        margin-top:0;
+    }
+    .distance{
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a"
+        "c"
+        "b"
+        "d";
+        justify-items: center;
+        align-items: center;
+        margin-bottom:4.375rem;
+    }
+    .est-distance{
+        margin-top:30px;
     }
 }
 @media (max-width: 380px){
